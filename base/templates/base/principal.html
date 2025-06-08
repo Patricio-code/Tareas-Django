@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lista de pendientes</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abel&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background-color: #4e8dff  ;
+                font-family: "Abel", sans-serif;
+                padding-top: 60px;
+            }
+            .container{
+                max-width: 550px;
+                margin: auto;
+                background-color: #82adfd;
+                border-radius: 5px 5px 5px 5px;
+                -webkit-box-shadow: 2px 2px 13px -4px rgba(0,0,0,0.50);
+                box-shadow: 2px 2px 13px -4px rgba(0,0,0,0.50);
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6{
+                font-family: "Lato", sans-serif;
+                font-style: italic;
+            }
+
+            a,
+            p{
+                color: #dbe5f7;
+            }
+            .barra-superior{
+                display: flex;
+                justify-content: space-between;
+                color: #FFFFFF;
+                padding: 10px;
+                border-radius: 5px 5px 5px 5px;
+                background: linear-gradient(90deg,#547fcf 0%,#4069b4 43%, #4069b4 100%);
+            }
+            .barra-superior input, a{
+                color: #FFFFFF;
+                text-decoration: none;
+                background: none;
+                border: none;
+            }
+            
+            .envoltorio-tarea{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px;
+                background-color: #FFFFFF;
+                border-top: 1px solid rgb(225,225,225);
+
+            }
+            .titulo-tarea{
+                display: flex;
+            }
+            .titulo-tarea a{
+                text-decoration: none;
+                color: #4b5156;
+                margin-left: 10px;
+            }
+            .icono-tarea-completa{
+                height: 20px;
+                width: 20px;
+                background-color: rgb(105,162,105);
+                border-radius: 50px;
+            }
+            .icono-tarea-incompleta{
+                height: 20px;
+                width: 20px;
+                background-color: rgb(218,218,218);
+                border-radius: 50px; 
+            }
+            .acciones-tareas{
+                display: flex;
+                align-items: center;
+                gap: 0.5em;
+            }
+            .enlace-eliminar{
+                text-decoration: none;
+                font-weight: 900;
+                line-height: 0;
+            }
+            .enlace-editar{
+                text-decoration: none;
+                display: inline-block;
+                padding-left: 200px;
+            }
+            #envoltorio-agregar-buscar{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+            }
+            #enlace-agregar{
+                color: #5dcbd5;
+                text-decoration: none;
+                font-size: 42px;
+                text-shadow: 1px 1px #47848a;
+            }
+            input[type=text],
+            input[type=password],
+            textarea{
+                border: 1px solid #465f88;
+                border-radius: 5px;
+                padding: 10px;
+                width: auto;
+                flex: 1;
+                box-sizing: border-box;
+            }
+            label{
+                padding-top: 10px !important;
+                display: block;
+            }
+            .boton{
+                border: 1px solid #465f88;
+                background-color: #FAFAFA;
+                color: #465f88;
+                padding: 10px;
+                font-size: 14px;
+                border-radius: 5px;
+                cursor: pointer;
+                text-decoration: none;
+                flex: none;
+                
+            }
+            .cuerpo-tarjeta{
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            {% block content %}
+
+            {% endblock content %}
+        </div>
+    </body>
+</html>

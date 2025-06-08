@@ -1,0 +1,6 @@
+/web/              # Tu entorno virtual
+*.pyc              # Archivos compilados de Python
+__pycache__/       # Carpeta de caché de Python
+*.sqlite3          # Base de datos local si existe
+*.log              # Archivos de log
+*.txt              # (opcional) si no querés subir archivos txt
